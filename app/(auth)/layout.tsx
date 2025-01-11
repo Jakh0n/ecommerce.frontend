@@ -1,8 +1,14 @@
+import Navbar from '@/components/shared/navbar'
 import { ChildProps } from '@/types'
 import React from 'react'
 
-function AuthLayout({ children }: ChildProps) {
-	return <div className='flex justify-center mt-44'>{children}</div>
+function Layout({ children }: ChildProps) {
+	return (
+		<div>
+			<Navbar />
+			<main className='container max-w-6xl mt-24'>{children}</main>
+		</div>
+	)
 }
 
-export default AuthLayout
+export default Layout

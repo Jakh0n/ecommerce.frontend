@@ -22,7 +22,7 @@ export default function RootLayout({ children }: ChildProps) {
 	return (
 		<html lang='en'>
 			<body className={`${montserrat.variable} overflow-x-hidden antialiased`}>
-				<div>{children}</div>
+				<div className='container max-w-6xl mt-24'>{children}</div>
 			</body>
 		</html>
 	)
